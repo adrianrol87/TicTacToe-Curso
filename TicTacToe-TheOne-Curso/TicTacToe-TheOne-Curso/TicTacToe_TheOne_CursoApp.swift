@@ -9,9 +9,9 @@ import SwiftUI
 
 @main
 struct TicTacToe_TheOne_CursoApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  var body: some Scene {
+    WindowGroup {
+      ContentView()
     }
+  }
 }
