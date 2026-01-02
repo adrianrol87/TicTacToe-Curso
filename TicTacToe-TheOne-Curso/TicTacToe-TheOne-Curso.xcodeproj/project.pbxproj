@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		05F9A1782F074B9500E6B8ED /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 05F9A1772F074B9500E6B8ED /* Factory */; };
+		05F9A17A2F074B9500E6B8ED /* FactoryKit in Frameworks */ = {isa = PBXBuildFile; productRef = 05F9A1792F074B9500E6B8ED /* FactoryKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		05F9A15B2F07415400E6B8ED /* TicTacToe-TheOne-Curso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TicTacToe-TheOne-Curso.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05F9A17A2F074B9500E6B8ED /* FactoryKit in Frameworks */,
+				05F9A1782F074B9500E6B8ED /* Factory in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +72,8 @@
 			);
 			name = "TicTacToe-TheOne-Curso";
 			packageProductDependencies = (
+				05F9A1772F074B9500E6B8ED /* Factory */,
+				05F9A1792F074B9500E6B8ED /* FactoryKit */,
 			);
 			productName = "TicTacToe-TheOne-Curso";
 			productReference = 05F9A15B2F07415400E6B8ED /* TicTacToe-TheOne-Curso.app */;
@@ -94,6 +103,9 @@
 			);
 			mainGroup = 05F9A1522F07415400E6B8ED;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				05F9A1762F074B9500E6B8ED /* XCRemoteSwiftPackageReference "Factory" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 05F9A15C2F07415400E6B8ED /* Products */;
 			projectDirPath = "";
@@ -332,6 +344,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		05F9A1762F074B9500E6B8ED /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		05F9A1772F074B9500E6B8ED /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05F9A1762F074B9500E6B8ED /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
+		};
+		05F9A1792F074B9500E6B8ED /* FactoryKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05F9A1762F074B9500E6B8ED /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = FactoryKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 05F9A1532F07415400E6B8ED /* Project object */;
 }
